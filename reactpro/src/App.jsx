@@ -29,9 +29,9 @@ const Header = () => {
 
 const GameGallery = () => {
   const [games, setGames] = useState([
-    { id: 1, name: 'Adventure Quest', image: '/Images/Adventure Quest.jpeg', rating: 4.5, comments: ['Amazing gameplay!', 'Loved the storyline.'] },
-    { id: 2, name: 'Battle Royale', image: '/Images/Battle Royale.jpeg', rating: 4.8, comments: ['Intense action!', 'Best multiplayer experience.'] },
-    { id: 3, name: 'Mystic Lands', image: '/Images/Mystic Islands.jpeg', rating: 4.2, comments: ['Beautiful graphics!', 'Engaging quests.'] },
+    { id: 1, name: 'Mini Battles', image: '/Images/Mini Battles.jpeg', url: 'https://poki.com/en/g/12-minibattles', rating: 4.5, comments: ['Amazing gameplay!', 'Loved the storyline.'] },
+    { id: 2, name: 'StickMan Crazy', image: '/Images/StickMan Crazy.jpeg', url: 'https://poki.com/en/g/stickman-crazy-box',rating: 4.8, comments: ['Intense action!', 'Best multiplayer experience.'] },
+    { id: 3, name: 'Tribals Survival', image: '/Images/Tribals Survival.jpeg', url: 'https://poki.com/en/g/tribals-io',rating: 4.2, comments: ['Beautiful graphics!', 'Engaging quests.'] },
   ]);
 
   const [selectedGame, setSelectedGame] = useState(null);
@@ -65,6 +65,7 @@ const GameGallery = () => {
             <img src={game.image} alt={game.name} />
             <h3>{game.name}</h3>
             <p>Rating: {game.rating} / 5</p>
+            <a href={game.url} target="_blank" rel="noopener noreferrer" className="play-button">Play Now</a>
           </div>
         ))}
       </div>
@@ -100,6 +101,7 @@ const FeaturedGame = () => {
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
+
 
   return (
     <section className="featured-game">
