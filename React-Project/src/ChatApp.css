@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height for vertical centering */
+}
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-container,
+.chat-container {
+  background: #f9f9f9; /* Light gray for subtle contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for better contrast */
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333; /* Darker input text */
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff; /* White text for contrast */
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.chat-box {
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #ffffff; /* White background for messages */
+}
+
+.message {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: #333; /* Dark text for messages */
+}
+
+.my-message {
+  background-color: #d1e7dd; /* Light green for user messages */
+  text-align: right;
+}
+
+.friend-message {
+  background-color: #f8d7da; /* Light pink for friend messages */
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+}
+
+.chat-input button {
+  width: auto;
+}
