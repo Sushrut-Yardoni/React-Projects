@@ -102,7 +102,6 @@ const FeaturedGame = () => {
     setIsPlaying(!isPlaying);
   };
 
-
   return (
     <section className="featured-game">
       <h2>Featured Game</h2>
@@ -110,8 +109,10 @@ const FeaturedGame = () => {
         <img src="/Images/Epic Adventure.jpeg" alt="Featured Game" />
         <div className="info">
           <h3>Epic Adventure</h3>
-          <p>Embark on an epic journey through uncharted lands. Discover secrets, battle foes, and become the ultimate hero!</p>
-          <button onClick={togglePlay}>{isPlaying ? 'Pause' : 'Play'} Now</button>
+          <p>Enter a dystopian world where technology meets chaos. Battle through neon-lit streets, hack advanced systems, and become the legend of the digital underground.</p>
+          <button onClick={togglePlay} className="play-button">
+            {isPlaying ? 'Pause Game' : 'Launch Game'}
+          </button>
         </div>
       </div>
     </section>
