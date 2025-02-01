@@ -4,10 +4,12 @@ import './App.css';
 const App = () => {
   return (
     <div className="app">
+      <center>
       <Header />
       <GameGallery />
       <FeaturedGame />
       <Footer />
+      </center>
     </div>
   );
 };
@@ -15,7 +17,7 @@ const App = () => {
 const Header = () => {
   return (
     <header className="header">
-      <h1>GameZone</h1>
+      <h1><center>GameZone</center></h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
