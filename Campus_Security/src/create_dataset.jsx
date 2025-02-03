@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import Webcam from "react-webcam";
-import * as cv from "opencv.js";
+import * as faceapi from "face-api.js";
 
 const FaceCapture = ({ name }) => {
   const webcamRef = useRef(null);
