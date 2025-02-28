@@ -1,5 +1,5 @@
 from Detector import main_app
-from create_classifier import train_classifer
+from create_classifier import train_classifier
 from create_dataset import start_capture
 import tkinter as tk
 from tkinter import font as tkfont
@@ -181,7 +181,7 @@ class PageThree(tk.Frame):
         if self.controller.num_of_images < 100:
             messagebox.showerror("ERROR", "Not enough Data, Capture at least 100 images!")
             return
-        train_classifer(self.controller.active_name)
+        train_classifier(self.controller.active_name)
         messagebox.showinfo("SUCCESS", "The model has been successfully trained!")
         self.controller.show_frame("PageFour")
 
